@@ -11,10 +11,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
   title: "UDARA",
-  description: "Web oficial de UDARA",
+  description: "Revista digital y proyecto editorial de moda y cultura.",
+  verification: {
+    google: "pO891u8YmRvzFfVM_6JGbJgkyrc62WZxjG_keuAaE34",
+  },
 };
 
 export default function RootLayout({
