@@ -1,0 +1,361 @@
+.hero {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: var(--blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* FOTO PORTADA */
+
+.photo {
+  position: relative;
+
+  width: 420px;
+
+  aspect-ratio: 1 / 1;
+}
+
+
+.image {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+
+/* LOGO UDARA */
+
+.logo {
+
+  position: absolute;
+
+  top: 40%;
+
+  left: 50%;
+
+
+  width: 950px;
+
+  height: 230px;
+
+
+  transform: translate(-50%, -50%);
+
+
+  z-index: 10;
+
+}
+
+
+
+/* SEGUNDA SECCIÓN */
+
+.nextSection {
+
+  width:100%;
+
+  min-height:300vh;
+
+  background:var(--blue);
+
+
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+}
+
+/* CONTENEDOR MESA */
+
+.mesaContainer {
+
+  margin-top: 2900px;
+
+}
+
+
+
+/* MESA */
+
+.mesa {
+
+  width: 450px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+}
+
+
+
+/* CONTENEDOR REDES */
+
+.redesContainer {
+
+  margin-top: 400px;
+
+}
+
+
+
+/* REDES */
+
+.redes {
+
+  width: 320px;
+
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+
+}
+/* TEXTOS LATERALES */
+
+.unaRevista {
+
+  position:absolute;
+
+  top:30%;
+
+  left:12%;
+
+
+  width:180px;
+
+
+  transform:translateY(-50%);
+
+
+  z-index:20;
+
+}
+
+
+
+.entreAmigos {
+
+  position:absolute;
+
+  top:70%;
+
+  right:12%;
+
+
+  width:180px;
+
+
+  transform:translateY(-50%);
+
+
+  z-index:20;
+
+}
+
+
+
+/* BARRA SUPERIOR */
+
+.topBar {
+
+  position:fixed;
+
+
+  top:0;
+
+  left:0;
+
+
+  width:100%;
+
+  height:70px;
+
+
+  background:rgba(0,0,0,.75);
+
+
+  z-index:40;
+
+}
+
+
+/* MENU */
+
+.topMenu {
+
+  position: fixed;
+
+  top: 18px;
+  right: 18px;
+
+  z-index: 60;
+
+}
+
+
+
+.menuIcon {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  cursor: pointer;
+
+}
+
+
+
+.menuIcon span {
+
+  width: 18px;
+
+  height: 2px;
+
+  background: white;
+
+}
+
+
+
+/* MENU DESPLEGABLE */
+
+.menuDropdown {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  margin-top: 15px;
+
+  opacity: 0;
+
+  transform: translateY(-20px);
+
+  pointer-events: none;
+
+  transition: .5s;
+
+}
+
+
+
+
+
+.menuDropdown.open {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+  pointer-events: auto;
+
+}
+
+
+
+.menuDropdown img {
+
+  display: block;
+
+  width: 140px;
+
+  height: auto;
+
+}
+
+.menuText {
+
+  color: white;
+
+  font-family: Helvetica, Arial, sans-serif;
+
+  font-size: 22px;
+
+  margin: 0;
+
+  cursor: pointer;
+
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+
+  .logo{
+    width:650px;
+    height:160px;
+  }
+
+  .photo{
+    width:340px;
+  }
+
+  .unaRevista,
+  .entreAmigos{
+    width:140px;
+  }
+
+}
+
+
+/* ========================= */
+/* MÓVIL */
+/* ========================= */
+
+@media (max-width: 768px){
+
+  .photo{
+    width:250px;
+  }
+
+  .logo{
+    width:360px;
+    height:90px;
+  }
+
+  .unaRevista{
+    left:5%;
+    top:22%;
+    width:90px;
+  }
+
+  .entreAmigos{
+    right:5%;
+    top:78%;
+    width:90px;
+  }
+
+  .mesa{
+    width:280px;
+  }
+
+  .redes{
+    width:220px;
+  }
+
+}
