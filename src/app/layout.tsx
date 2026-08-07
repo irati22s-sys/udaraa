@@ -12,12 +12,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "UDARA",
-  description: "Una web entre amigos para inmortalizar nuestros momentos, nuestras historias y todo lo que somos.",
-  verification: {
-    google: "pO891u8YmRvzFfVM_6JGbJgkyrc62WZxjG_keuAaE34",
-  },
+  title: "UDARA — Una revista entre amigos",
+  description:
+    "Una web entre amigos para inmortalizar nuestros momentos, nuestras historias y todo lo que somos.",
 };
+
 
 export default function RootLayout({
   children,
