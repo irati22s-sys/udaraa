@@ -6,24 +6,15 @@ const revistas = [
   {
     id: "edicion-1",
     nombre: "Edición 1",
-    imagen: "/photos/cover01.webp",
+    imagen: "/revistas/edicion1.jpg",
   },
   {
     id: "edicion-2",
     nombre: "Edición 2",
-    imagen: "/photos/cover02.webp",
-  },
-  {
-    id: "edicion-3",
-    nombre: "Edición 3",
-    imagen: "/photos/cover03.webp",
-  },
-  {
-    id: "edicion-4",
-    nombre: "Edición 4",
-    imagen: "/photos/cover04.webp",
+    imagen: "/revistas/edicion2.jpg",
   },
 ];
+
 
 export default function Revistas() {
   return (
