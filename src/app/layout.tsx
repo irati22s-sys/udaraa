@@ -40,6 +40,10 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://udaraa.vercel.app"),
 
+  icons: {
+    icon: "/logos/estrella.png",
+  },
+
   openGraph: {
     title: "UDARA — Una revista entre amigos",
     description:
