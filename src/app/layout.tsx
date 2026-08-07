@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 export const metadata: Metadata = {
   title: "UDARA",
-  description: "Revista digital y proyecto editorial de moda y cultura.",
+  description: "Una web entre amigos para inmortalizar nuestros momentos, nuestras historias y todo lo que somos.",
   verification: {
     google: "pO891u8YmRvzFfVM_6JGbJgkyrc62WZxjG_keuAaE34",
   },
